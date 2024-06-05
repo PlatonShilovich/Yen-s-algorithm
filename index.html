@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization of Yen's Algorithm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Visualization of Yen's Algorithm</h1>
+    <div>
+        <h2>Add Nodes</h2>
+        <label for="node-label">Label:</label>
+        <input type="text" id="node-label" />
+        <button onclick="addNode()">Add Node</button>
+    </div>
+    <div>
+        <h2>Add Edges</h2>
+        <label for="edge-source">Source:</label>
+        <input type="text" id="edge-source" />
+        <label for="edge-target">Target:</label>
+        <input type="text" id="edge-target" />
+        <label for="edge-cost">Cost:</label>
+        <input type="number" id="edge-cost" />
+        <button onclick="addEdge()">Add Edge</button>
+    </div>
+    <div>
+        <h2>Remove Node</h2>
+        <label for="remove-node-label">Label:</label>
+        <input type="text" id="remove-node-label" />
+        <button onclick="removeNode()">Remove Node</button>
+    </div>
+    <div>
+        <h2>Remove Edge</h2>
+        <label for="remove-edge-source">Source:</label>
+        <input type="text" id="remove-edge-source" />
+        <label for="remove-edge-target">Target:</label>
+        <input type="text" id="remove-edge-target" />
+        <button onclick="removeEdge()">Remove Edge</button>
+    </div>
+    <div>
+        <h2>Find K-Optimal Paths</h2>
+        <label for="yen-source">Source:</label>
+        <input type="text" id="yen-source" />
+        <label for="yen-target">Target:</label>
+        <input type="text" id="yen-target" />
+        <label for="yen-k">K:</label>
+        <input type="number" id="yen-k" />
+        <button onclick="findKOptimalPaths()">Find Paths</button>
+    </div>
+    <div>
+        <button id="clear-graph-button">Очистить граф</button>
+        <input type="file" id="load-file" />
+    </div>    
+    <div id="graph"></div>
+    <div>
+        <h2>Paths</h2>
+        <table id="paths-table">
+            <thead>
+                <tr>
+                    <th>Path Number</th>
+                    <th>Path</th>
+                    <th>Length</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

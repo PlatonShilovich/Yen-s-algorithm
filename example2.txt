@@ -1,0 +1,9 @@
+NODES
+A 0 0
+B 1 0
+C 2 0
+
+EDGES
+A B 1
+B C 1
+C A 1

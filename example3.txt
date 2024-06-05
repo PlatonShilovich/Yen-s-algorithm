@@ -1,0 +1,6 @@
+NODES
+A 0 0
+B 1 0
+
+EDGES
+A B 5

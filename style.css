@@ -1,0 +1,42 @@
+body {
+   font-family: Arial, sans-serif;
+}
+
+#graph {
+   width: 100%;
+   height: 600px;
+   border: 1px solid #ccc;
+}
+
+.line-path {
+   fill: none;
+   stroke-width: 2px;
+}
+
+.path-0 {
+   stroke: red;
+}
+
+.path-1 {
+   stroke: blue;
+}
+
+.path-2 {
+   stroke: green;
+}
+
+form {
+   margin-bottom: 20px;
+}
+
+form div {
+   margin-bottom: 10px;
+}
+
+label {
+   margin-right: 10px;
+}
+
+button {
+   margin-top: 10px;
+}
